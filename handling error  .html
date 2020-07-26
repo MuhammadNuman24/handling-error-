@@ -1,0 +1,20 @@
+<script>
+
+function doIt(){
+try {
+throw Error ('something went wrong!');
+  console.log('did  it!');
+//return;
+
+}catch(err){
+console.log ('error occurred');
+console.error(err);
+} finally{
+console.log('finally executed');
+
+}
+
+}
+doIt();
+
+</script> 
